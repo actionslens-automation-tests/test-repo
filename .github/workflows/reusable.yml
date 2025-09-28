@@ -14,3 +14,14 @@ jobs:
 
       - name: Print test - step 2
         run: echo "This is a basic test workflow running on push or manual trigger."
+  print-test-win:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Print test - step 1
+        run: echo "test"
+
+      - name: Print test - step 2
+        run: echo "This is a basic test workflow running on push or manual trigger."
